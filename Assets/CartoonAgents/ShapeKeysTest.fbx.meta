@@ -21,6 +21,15 @@ ModelImporter:
   - first:
       74: -6152402131473057872
     second: _Idle.001
+  - first:
+      74: -7899290668035298818
+    second: _Idle (1)
+  - first:
+      74: 7462216694325154417
+    second: Armature|_Idle.Smile
+  - first:
+      74: -8301345355329459594
+    second: Armature|_Smile
   externalObjects: {}
   materials:
     materialImportMode: 2
@@ -50,18 +59,18 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: _TPose
-      takeName: _TPose
+      name: Armature|_Smile
+      takeName: Armature|_Smile
       internalID: 0
       firstFrame: 0
-      lastFrame: 1
+      lastFrame: 39
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0

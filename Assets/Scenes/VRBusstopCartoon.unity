@@ -714,6 +714,30 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4788847417403042390, guid: 3ce3b9571f8c14a58829cad2712575c3, type: 3}
   m_PrefabInstance: {fileID: 1573945355}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &35478355 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 6d2b7fdd0eaa4b044ace265fe39c0be7, type: 3}
+  m_PrefabInstance: {fileID: 1355287565}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &35478357
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 35478355}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9e9074a505573b34b94b03e335acfa0c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &41029643
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -48829,6 +48853,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 6d2b7fdd0eaa4b044ace265fe39c0be7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3af277ac82a57234088eb3dd0300ecd4, type: 2}
     - target: {fileID: 919132149155446097, guid: 6d2b7fdd0eaa4b044ace265fe39c0be7, type: 3}
       propertyPath: m_Name
       value: ShapeKeysTest
@@ -48838,13 +48866,29 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3767958739024703437, guid: 6d2b7fdd0eaa4b044ace265fe39c0be7, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3767958739024703437, guid: 6d2b7fdd0eaa4b044ace265fe39c0be7, type: 3}
       propertyPath: m_UpdateWhenOffscreen
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3767958739024703437, guid: 6d2b7fdd0eaa4b044ace265fe39c0be7, type: 3}
+      propertyPath: m_SkinnedMotionVectors
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3767958739024703437, guid: 6d2b7fdd0eaa4b044ace265fe39c0be7, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 3af277ac82a57234088eb3dd0300ecd4, type: 2}
+    - target: {fileID: 3767958739024703437, guid: 6d2b7fdd0eaa4b044ace265fe39c0be7, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3767958739024703437, guid: 6d2b7fdd0eaa4b044ace265fe39c0be7, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[0]
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d2b7fdd0eaa4b044ace265fe39c0be7, type: 3}
 --- !u!1001 &1356137394
