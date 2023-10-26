@@ -12,16 +12,18 @@ public class CartoonAgents : MonoBehaviour
     float targetAngle;                // The target angle for character rotation.
     float curAngle;                   // The current character rotation angle.
     public float angleLerpAlpha = 0.5f;  // A parameter for lerping character rotation.
-    Animator animator;                // Reference to the character's animator.
     public float timer = 0.0f;        // A timer for triggering actions at specific intervals.
     public float waitingTime;          // Time to wait between actions.
     public float smilingCounter = 0.0f;  // A counter for smiling actions.
+    private SkinnedMeshRenderer skinnedMeshRenderer; // Reference to the skinnedMeshRenderer from the object.
+    private int smileBlendShapeIndex = 0; // The index of the "Smile" BlendShape
+    private Transform childTransform; // Get child of object.
+
 
     // Start is called before the first frame update
     void Start()
     {   
         curAngle = 0.0f;                                      // Initialize the character's rotation angle.
-        animator = GetComponent<Animator>();                 // Get the Animator component.
     }
 
     // Update is called once per frame
@@ -63,6 +65,10 @@ public class CartoonAgents : MonoBehaviour
     // Function to trigger a smile action (not currently used in the code).
     public void smileTrigger()
     {
-        animator.SetTrigger("smile");  // Set the "smile" trigger in the animator.
+        childTransform = transform.Find("ShapeKeysTest"); // Get child 
+        skinnedMeshRenderer = childTransform.GetComponent<SkinnedMeshRenderer>();
+        skinnedMeshRenderer.SetBlendShapeWeight(smileBlendShapeIndex, 100);
+
+        Debug.Log("Smile triggered");
     }
 }
