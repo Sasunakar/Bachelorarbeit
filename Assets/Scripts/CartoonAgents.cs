@@ -65,10 +65,9 @@ public class CartoonAgents : MonoBehaviour
     // Function to trigger a smile action (not currently used in the code).
     public void smileTrigger()
     {
-        childTransform = transform.Find("ShapeKeysTest"); // Get child 
+        childTransform = transform.Find("CartoonCharacter"); // Get child 
         skinnedMeshRenderer = childTransform.GetComponent<SkinnedMeshRenderer>();
         skinnedMeshRenderer.SetBlendShapeWeight(smileBlendShapeIndex, 100);
-
         Debug.Log("Smile triggered");
     }
 }

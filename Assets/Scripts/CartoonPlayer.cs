@@ -15,16 +15,12 @@ public class CartoonPlayer : MonoBehaviour
     public float smileCounter = 0.0f;
     public GameOverScreen GameOverScreen;
     public float totalTime;
-    public string sceneNameP;
     //public float timer = 0.0f;
     CartoonAgents[] a;
     // Start is called before the first frame update
     void Start()
     {
         a = (CartoonAgents[])GameObject.FindObjectsOfType(typeof(CartoonAgents));
-        Debug.Log("Found Cartoon Agents");
-        Scene currentScene = SceneManager.GetActiveScene ();
-        sceneNameP = currentScene.name;
     }
 
     // Update is called once per frame

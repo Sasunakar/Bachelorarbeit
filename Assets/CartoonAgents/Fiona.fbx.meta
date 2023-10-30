@@ -53,8 +53,8 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: _Idle (1)
-      takeName: _Idle
+      name: Armature|_Idle (1)
+      takeName: Armature|_Idle
       internalID: 0
       firstFrame: 0
       lastFrame: 39
@@ -235,7 +235,7 @@ ModelImporter:
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
-    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
   referencedClips: []
