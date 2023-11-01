@@ -57,9 +57,10 @@ public class CartoonPlayer : MonoBehaviour
                     
                     // looking at?
                     if(lookAtAngle <= lookAtHalfAngle) {
-                        aa.LookAtPoint(cam.transform.position, 
+                        /*aa.LookAtPoint(cam.transform.position, 
                         cam.transform.position - new Vector3(0, headVerticalTargetOffset, 0),
-                        eyeAngleCorrectAlpha);
+                        eyeAngleCorrectAlpha);*/
+                        aa.OnAnimatorIK(0);
                         
                         // unique timer for every agent to check for smile
                         aa.timer += Time.deltaTime;

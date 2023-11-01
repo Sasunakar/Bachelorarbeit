@@ -20,11 +20,16 @@ public class CartoonAgents : MonoBehaviour
     private Transform childTransform; // Get child of object.
     private float transitionDuration = 1.0f;
 
+    public Transform objectToLookAt;
+    public float headWeight;
+    public float bodyWeight;
+    private Animator animator;
 
     // Start is called before the first frame update
     void Start()
     {   
         curAngle = 0.0f;                                      // Initialize the character's rotation angle.
+        animator = GetComponent<Animator>();
 
         // Set faces to neutral at the start
         childTransform = transform.Find("CartoonCharacter"); // Get child 
@@ -54,7 +59,13 @@ public class CartoonAgents : MonoBehaviour
         float rotAngle = Mathf.Acos(rotAngleDot) * (rotAngleDotRight > 0 ? 1.0f : -1.0f);
         rotAngle *= 180.0f / Mathf.PI;
         targetAngle = rotAngle;
-        Debug.Log("LookAtPoint");
+        Debug.Log("Cartoon looking at Player");
+    }
+
+    public void OnAnimatorIK(int layerIndex)
+    {
+        animator.SetLookAtPosition(objectToLookAt.position);
+        animator.SetLookAtWeight(1, bodyWeight, headWeight);
     }
 
     // Function to trigger a smile action.
