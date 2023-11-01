@@ -24,6 +24,11 @@ public class CartoonAgents : MonoBehaviour
     void Start()
     {   
         curAngle = 0.0f;                                      // Initialize the character's rotation angle.
+
+    // set face to neutral
+        childTransform = transform.Find("CartoonCharacter"); // Get child 
+        skinnedMeshRenderer = childTransform.GetComponent<SkinnedMeshRenderer>();
+        skinnedMeshRenderer.SetBlendShapeWeight(smileBlendShapeIndex, 0);
     }
 
     // Update is called once per frame

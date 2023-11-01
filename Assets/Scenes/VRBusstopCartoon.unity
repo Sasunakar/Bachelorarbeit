@@ -128,6 +128,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8790364033423574129, guid: 329c71fa8b1d41b48972d508a60bdb26, type: 3}
   m_PrefabInstance: {fileID: 69435804}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &15128139 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7570068890274395586, guid: 329c71fa8b1d41b48972d508a60bdb26, type: 3}
+  m_PrefabInstance: {fileID: 69435804}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &18114569 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -2442636655555998630, guid: bcec3e850a5e64bec834a3bc9d92b121, type: 3}
@@ -951,7 +956,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 329c71fa8b1d41b48972d508a60bdb26, type: 3}
       propertyPath: m_Name
-      value: Sadik (1)
+      value: Sadik - Cartoon
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 329c71fa8b1d41b48972d508a60bdb26, type: 3}
       propertyPath: m_IsActive
@@ -961,6 +966,18 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 3af277ac82a57234088eb3dd0300ecd4, type: 2}
+    - target: {fileID: 4087551219612846956, guid: 329c71fa8b1d41b48972d508a60bdb26, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4087551219612846956, guid: 329c71fa8b1d41b48972d508a60bdb26, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[0]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8314417387056288036, guid: 329c71fa8b1d41b48972d508a60bdb26, type: 3}
+      propertyPath: m_Name
+      value: CartoonCharacter
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 329c71fa8b1d41b48972d508a60bdb26, type: 3}
 --- !u!1 &79053864
@@ -1269,6 +1286,11 @@ GameObject:
 Transform:
   m_CorrespondingSourceObject: {fileID: 3368357624703191325, guid: 4b408a9b1f3c1c242bfa4d14ad24a041, type: 3}
   m_PrefabInstance: {fileID: 857834870}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &117581861 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -5867385175146956935, guid: 329c71fa8b1d41b48972d508a60bdb26, type: 3}
+  m_PrefabInstance: {fileID: 69435804}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &138424315 stripped
 Transform:
@@ -6780,7 +6802,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 39fcf96e9490b6d4aa1efa4d0ccb2ee7, type: 3}
       propertyPath: m_Name
-      value: Leon (1)
+      value: Leon - Cartoon
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 39fcf96e9490b6d4aa1efa4d0ccb2ee7, type: 3}
       propertyPath: m_IsActive
@@ -7656,7 +7678,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 5bc1730241f5e1d4f9b0f69944c6945f, type: 3}
       propertyPath: m_Name
-      value: Ann (1)
+      value: Ann - Cartoon
       objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: 5bc1730241f5e1d4f9b0f69944c6945f, type: 3}
       propertyPath: m_Avatar
@@ -12609,6 +12631,52 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: -8541329079247932280, guid: 0ee6628e38f244064a50aa3ec8a55a6b, type: 3}
   m_PrefabInstance: {fileID: 1907098090}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &564370211
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 564370213}
+  - component: {fileID: 564370212}
+  m_Layer: 0
+  m_Name: IK
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &564370212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 564370211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70b342d8ce5c2fd48b8fa3147d48d1d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Weight: 1
+  m_Effectors: []
+--- !u!4 &564370213
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 564370211}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 913599443}
+  m_Father: {fileID: 2026327688}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &586576237 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4455479768382136934, guid: bcec3e850a5e64bec834a3bc9d92b121, type: 3}
@@ -17880,6 +17948,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d176dbec78cfc7d458d8bec320033c63, type: 3}
+--- !u!4 &640640808 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3368357624703191325, guid: 329c71fa8b1d41b48972d508a60bdb26, type: 3}
+  m_PrefabInstance: {fileID: 69435804}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &640690825 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -7030842900008749454, guid: 2c2d86ad8b54d481d84da665536e852d, type: 3}
@@ -23031,7 +23104,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 89e11c87beda213439b90f6ae908417a, type: 3}
       propertyPath: m_Name
-      value: Fiona (1)
+      value: Fiona - Cartoon
       objectReference: {fileID: 0}
     - target: {fileID: 2371619757826734292, guid: 89e11c87beda213439b90f6ae908417a, type: 3}
       propertyPath: m_Name
@@ -33309,7 +33382,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 4b408a9b1f3c1c242bfa4d14ad24a041, type: 3}
       propertyPath: m_Name
-      value: Lukas (1)
+      value: Lukas - Cartoon
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b408a9b1f3c1c242bfa4d14ad24a041, type: 3}
@@ -33538,6 +33611,63 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 006979490885a6a4a85c68dfadd0ad16, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b77dbcf466f3c424b8629799b5d00883, type: 3}
+--- !u!1 &913599442
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 913599443}
+  - component: {fileID: 913599444}
+  m_Layer: 0
+  m_Name: IK_Target
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &913599443
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 913599442}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.44, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 564370213}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &913599444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 913599442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aeda7bfbf984f2a4da5ab4b8967b115d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Weight: 1
+  m_Data:
+    m_Root: {fileID: 15128139}
+    m_Mid: {fileID: 640640808}
+    m_Tip: {fileID: 117581861}
+    m_Target: {fileID: 913599443}
+    m_Hint: {fileID: 0}
+    m_TargetPositionWeight: 0
+    m_TargetRotationWeight: 1
+    m_HintWeight: 1
+    m_MaintainTargetPositionOffset: 1
+    m_MaintainTargetRotationOffset: 0
+  m_SourceObjectsGUIToggle: 1
+  m_SettingsGUIToggle: 1
 --- !u!1 &929752726
 GameObject:
   m_ObjectHideFlags: 0
@@ -48652,7 +48782,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 3af277ac82a57234088eb3dd0300ecd4, type: 2}
     - target: {fileID: 919132149155446097, guid: ac844424e660d9d419344d21c310f560, type: 3}
       propertyPath: m_Name
-      value: Zina (1)
+      value: Zina - Cartoon
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ac844424e660d9d419344d21c310f560, type: 3}
       propertyPath: m_IsActive
@@ -49608,7 +49738,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 87eac2bbae980e04a81924aef96c2ad8, type: 3}
       propertyPath: m_Name
-      value: Sarah (1)
+      value: Sarah - Cartoon
       objectReference: {fileID: 0}
     - target: {fileID: 1383056548998124625, guid: 87eac2bbae980e04a81924aef96c2ad8, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -55133,7 +55263,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c77a8d1f4b0479944ab27e14d3bd2266, type: 3}
       propertyPath: m_Name
-      value: Helena (1)
+      value: Helena - Cartoon
       objectReference: {fileID: 0}
     - target: {fileID: 2631294500243917018, guid: c77a8d1f4b0479944ab27e14d3bd2266, type: 3}
       propertyPath: m_Name
@@ -60120,6 +60250,27 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!4 &2026327688 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 329c71fa8b1d41b48972d508a60bdb26, type: 3}
+  m_PrefabInstance: {fileID: 69435804}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2026327689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2026327685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fff0960ef4ea6e04eac66b4a7fd2189d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RigLayers:
+  - m_Rig: {fileID: 564370212}
+    m_Active: 1
+  m_Effectors: []
 --- !u!1001 &2035084721
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -60173,7 +60324,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 49d5f5c077be14c42a16a26667eb26b2, type: 3}
       propertyPath: m_Name
-      value: Sylvia (1)
+      value: Sylvia - Cartoon
       objectReference: {fileID: 0}
     - target: {fileID: 2009697873447661136, guid: 49d5f5c077be14c42a16a26667eb26b2, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -60407,7 +60558,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 3af277ac82a57234088eb3dd0300ecd4, type: 2}
     - target: {fileID: 919132149155446097, guid: 2c11cd491d8172e448c680d075f4c2df, type: 3}
       propertyPath: m_Name
-      value: Sandra (1)
+      value: Sandra - Cartoon
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c11cd491d8172e448c680d075f4c2df, type: 3}

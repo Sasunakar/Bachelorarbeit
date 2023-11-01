@@ -18,6 +18,9 @@ ModelImporter:
   - first:
       74: 5203840005523976183
     second: Armature|_TPose
+  - first:
+      74: -7899290668035298818
+    second: _Idle (1)
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -52,11 +55,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: _TPose
-      takeName: _TPose
+      name: _Idle (1)
+      takeName: _Idle
       internalID: 0
       firstFrame: 0
-      lastFrame: 1
+      lastFrame: 39
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -235,7 +238,7 @@ ModelImporter:
     tangentImportMode: 3
     normalCalculationMode: 4
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
-    blendShapeNormalImportMode: 0
+    blendShapeNormalImportMode: 1
     normalSmoothingSource: 3
   referencedClips: []
   importAnimation: 1
