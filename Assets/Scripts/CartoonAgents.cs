@@ -26,7 +26,7 @@ public class CartoonAgents : MonoBehaviour
     {   
         curAngle = 0.0f;                                      // Initialize the character's rotation angle.
 
-    // set face to neutral at the start
+        // Set faces to neutral at the start
         childTransform = transform.Find("CartoonCharacter"); // Get child 
         skinnedMeshRenderer = childTransform.GetComponent<SkinnedMeshRenderer>();
         skinnedMeshRenderer.SetBlendShapeWeight(smileBlendShapeIndex, 0);
@@ -54,6 +54,7 @@ public class CartoonAgents : MonoBehaviour
         float rotAngle = Mathf.Acos(rotAngleDot) * (rotAngleDotRight > 0 ? 1.0f : -1.0f);
         rotAngle *= 180.0f / Mathf.PI;
         targetAngle = rotAngle;
+        Debug.Log("LookAtPoint");
     }
 
     // Function to trigger a smile action.
