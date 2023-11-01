@@ -63,7 +63,9 @@ public class CartoonPlayer : MonoBehaviour
                         
                         // unique timer for every agent to check for smile
                         aa.timer += Time.deltaTime;
-                            
+
+                        if (aa.timer > aa.waitingTime)
+                        {
                             // did agent already smile?
                             if (aa.smilingCounter == 0)
                             {
@@ -87,3 +89,4 @@ public class CartoonPlayer : MonoBehaviour
             }
         }
     }
+}
