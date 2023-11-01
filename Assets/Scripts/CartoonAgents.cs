@@ -18,6 +18,7 @@ public class CartoonAgents : MonoBehaviour
     private SkinnedMeshRenderer skinnedMeshRenderer; // Reference to the skinnedMeshRenderer from the object.
     private int smileBlendShapeIndex = 0; // The index of the "Smile" BlendShape
     private Transform childTransform; // Get child of object.
+    private float transitionDuration = 1.0f;
 
 
     // Start is called before the first frame update
@@ -25,7 +26,7 @@ public class CartoonAgents : MonoBehaviour
     {   
         curAngle = 0.0f;                                      // Initialize the character's rotation angle.
 
-    // set face to neutral
+    // set face to neutral at the start
         childTransform = transform.Find("CartoonCharacter"); // Get child 
         skinnedMeshRenderer = childTransform.GetComponent<SkinnedMeshRenderer>();
         skinnedMeshRenderer.SetBlendShapeWeight(smileBlendShapeIndex, 0);
@@ -36,18 +37,6 @@ public class CartoonAgents : MonoBehaviour
     {
         curAngle = Mathf.Lerp(curAngle, targetAngle, angleLerpAlpha * Time.deltaTime);  // Smoothly interpolate character rotation.
         ikTarget.transform.eulerAngles = new Vector3(0, -90 + curAngle, -90);  // Update IK target rotation.
-    }
-
-    // Helper function to create an axis (up and right) from a forward vector.
-    (Vector3 up, Vector3 right) MakeAxisFromForward(Vector3 forward) 
-    {
-        // Calculate perpendicular up and right vectors.
-        Vector3 pUp = new Vector3(0, 1, 0);
-        Vector3 pRight = Vector3.Cross(forward, pUp);
-        pRight.Normalize();
-        pUp = Vector3.Cross(pRight, forward);
-        pUp.Normalize();
-        return (pUp, pRight);
     }
 
     // Function to make the character look at a point with correction.
@@ -67,12 +56,43 @@ public class CartoonAgents : MonoBehaviour
         targetAngle = rotAngle;
     }
 
-    // Function to trigger a smile action (not currently used in the code).
-    public void smileTrigger()
+    // Function to trigger a smile action.
+    /*public void smileTrigger()
     {
         childTransform = transform.Find("CartoonCharacter"); // Get child 
         skinnedMeshRenderer = childTransform.GetComponent<SkinnedMeshRenderer>();
         skinnedMeshRenderer.SetBlendShapeWeight(smileBlendShapeIndex, 100);
         Debug.Log("Smile triggered");
     }
+    */
+
+    public void smileTrigger()
+    {
+     childTransform = transform.Find("CartoonCharacter"); // Get child 
+        skinnedMeshRenderer = childTransform.GetComponent<SkinnedMeshRenderer>();
+
+        // Start the coroutine to gradually set the blend shape weight to 100
+        StartCoroutine(ChangeBlendShapeOverTime(smileBlendShapeIndex, 100, transitionDuration));
+    }
+
+    private IEnumerator ChangeBlendShapeOverTime(int blendShapeIndex, float targetWeight, float duration)
+    {
+        float startTime = Time.time;
+        float startWeight = skinnedMeshRenderer.GetBlendShapeWeight(blendShapeIndex);
+
+        while (Time.time - startTime < duration)
+        {
+           float elapsedTime = Time.time - startTime;
+            float t = Mathf.Clamp01(elapsedTime / duration); // Calculate the interpolation factor
+
+           float newWeight = Mathf.Lerp(startWeight, targetWeight, t);
+           skinnedMeshRenderer.SetBlendShapeWeight(blendShapeIndex, newWeight);
+
+           yield return null;
+        }
+
+        // Ensure the final blend shape weight is set to the target value
+        skinnedMeshRenderer.SetBlendShapeWeight(blendShapeIndex, targetWeight);
+    }
+
 }
