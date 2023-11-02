@@ -15,7 +15,6 @@ public class Animations : MonoBehaviour
          ps = GameObject.Find(name+"PS").GetComponent<ParticleSystem>();
          m_audio = GetComponent<AudioSource>();
  
-
          while (true)
         {
             yield return new WaitForSeconds(Random.Range(10,15));
@@ -26,21 +25,12 @@ public class Animations : MonoBehaviour
                 ps.Play();
                 m_audio.Play();
             }
-            
-
         }
         
     }
 
     // Update is called once per frame
     void Update()
-    {
-        // if (anim.GetCurrentAnimatorStateInfo(0).IsName("Idles.niesen"))
-        //{
-        //   m_audio.Play();
-        //   ps.Play();
-            
-        //}
-        
+    {       
     }
 }

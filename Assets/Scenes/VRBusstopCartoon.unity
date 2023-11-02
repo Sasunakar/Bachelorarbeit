@@ -813,6 +813,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 329c71fa8b1d41b48972d508a60bdb26, type: 3}
+--- !u!4 &69435805 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -5867385175146956935, guid: 329c71fa8b1d41b48972d508a60bdb26, type: 3}
+  m_PrefabInstance: {fileID: 69435804}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &69435806 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3368357624703191325, guid: 329c71fa8b1d41b48972d508a60bdb26, type: 3}
+  m_PrefabInstance: {fileID: 69435804}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &69435807 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7570068890274395586, guid: 329c71fa8b1d41b48972d508a60bdb26, type: 3}
+  m_PrefabInstance: {fileID: 69435804}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &69814226 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7570068890274395586, guid: 2c11cd491d8172e448c680d075f4c2df, type: 3}
@@ -1439,8 +1454,8 @@ MonoBehaviour:
   focusBone: {fileID: 971044459}
   ikTarget: {fileID: 206637583}
   angleLerpAlpha: 0.5
-  timer: 15
-  waitingTime: 0
+  timer: 0
+  waitingTime: 15
   smilingCounter: 0
 --- !u!114 &192201668
 MonoBehaviour:
@@ -6923,7 +6938,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: e2eeabae55e42394fb3c9e0e09ec417e, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 1
+  m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
@@ -33308,6 +33323,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 913599443}
+  - component: {fileID: 913599444}
   m_Layer: 0
   m_Name: IK_Target
   m_TagString: Untagged
@@ -33329,6 +33345,32 @@ Transform:
   m_Father: {fileID: 564370213}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &913599444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 913599442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aeda7bfbf984f2a4da5ab4b8967b115d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Weight: 1
+  m_Data:
+    m_Root: {fileID: 69435807}
+    m_Mid: {fileID: 69435806}
+    m_Tip: {fileID: 69435805}
+    m_Target: {fileID: 913599443}
+    m_Hint: {fileID: 0}
+    m_TargetPositionWeight: 0
+    m_TargetRotationWeight: 1
+    m_HintWeight: 1
+    m_MaintainTargetPositionOffset: 1
+    m_MaintainTargetRotationOffset: 0
+  m_SourceObjectsGUIToggle: 1
+  m_SettingsGUIToggle: 1
 --- !u!1 &927972228 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8407717347847440198, guid: 49d5f5c077be14c42a16a26667eb26b2, type: 3}
@@ -54824,7 +54866,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: 012dd836e06bab042b4aba4e4e53a9ec, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 1
+  m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
@@ -58219,7 +58261,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: 2fb71a31e38bafe4ea51ef8a457af646, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 1
+  m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
