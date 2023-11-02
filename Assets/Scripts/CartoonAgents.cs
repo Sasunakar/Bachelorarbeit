@@ -19,16 +19,12 @@ public class CartoonAgents : MonoBehaviour
     private int smileBlendShapeIndex = 0; // The index of the "Smile" BlendShape
     private Transform childTransform; // Get child of object.
     private float transitionDuration = 1.0f;
-
-    public Transform objectToLookAt;
-    public float headWeight;
-    public float bodyWeight;
     private Animator animator;
 
     // Start is called before the first frame update
     void Start()
     {   
-        curAngle = 0.0f;                                      // Initialize the character's rotation angle.
+        //curAngle = 0.0f;                                      // Initialize the character's rotation angle.
         animator = GetComponent<Animator>();
 
         // Set faces to neutral at the start
@@ -44,43 +40,9 @@ public class CartoonAgents : MonoBehaviour
         ikTarget.transform.eulerAngles = new Vector3(0, -90 + curAngle, -90);  // Update IK target rotation.
     }
 
-    // Function to make the character look at a point with correction.
-    public void LookAtPoint(Vector3 p, Vector3 pBelow, float angleCorrectAlpha)
-    {
-        // Calculate the character's forward direction.
-        Vector3 forwardHead = pBelow - focusBone.transform.position;
-        Vector2 fh2D = new Vector2(forwardHead.x, forwardHead.z);
-        fh2D.Normalize();
-        forwardHead = new Vector3(fh2D.x, 0, fh2D.y);
-        
-        // Calculate the character's rotation angle to look at the specified point.
-        float rotAngleDot = Vector3.Dot(forwardHead, transform.TransformVector(new Vector3(0, 0, 1)));
-        float rotAngleDotRight = Vector3.Dot(forwardHead, transform.TransformVector(new Vector3(1, 0, 0)));
-        float rotAngle = Mathf.Acos(rotAngleDot) * (rotAngleDotRight > 0 ? 1.0f : -1.0f);
-        rotAngle *= 180.0f / Mathf.PI;
-        targetAngle = rotAngle;
-        Debug.Log("Cartoon looking at Player");
-    }
-
-    public void OnAnimatorIK(int layerIndex)
-    {
-        animator.SetLookAtPosition(objectToLookAt.position);
-        animator.SetLookAtWeight(1, bodyWeight, headWeight);
-    }
-
-    // Function to trigger a smile action.
-    /*public void smileTrigger()
-    {
-        childTransform = transform.Find("CartoonCharacter"); // Get child 
-        skinnedMeshRenderer = childTransform.GetComponent<SkinnedMeshRenderer>();
-        skinnedMeshRenderer.SetBlendShapeWeight(smileBlendShapeIndex, 100);
-        Debug.Log("Smile triggered");
-    }
-    */
-
     public void smileTrigger()
     {
-     childTransform = transform.Find("CartoonCharacter"); // Get child 
+        childTransform = transform.Find("CartoonCharacter"); // Get child 
         skinnedMeshRenderer = childTransform.GetComponent<SkinnedMeshRenderer>();
 
         // Start the coroutine to gradually set the blend shape weight to 100
@@ -94,13 +56,13 @@ public class CartoonAgents : MonoBehaviour
 
         while (Time.time - startTime < duration)
         {
-           float elapsedTime = Time.time - startTime;
+            float elapsedTime = Time.time - startTime;
             float t = Mathf.Clamp01(elapsedTime / duration); // Calculate the interpolation factor
-
-           float newWeight = Mathf.Lerp(startWeight, targetWeight, t);
-           skinnedMeshRenderer.SetBlendShapeWeight(blendShapeIndex, newWeight);
-
-           yield return null;
+            
+            float newWeight = Mathf.Lerp(startWeight, targetWeight, t);
+            skinnedMeshRenderer.SetBlendShapeWeight(blendShapeIndex, newWeight);
+            
+            yield return null;
         }
 
         // Ensure the final blend shape weight is set to the target value

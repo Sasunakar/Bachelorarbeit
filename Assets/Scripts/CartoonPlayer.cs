@@ -15,7 +15,6 @@ public class CartoonPlayer : MonoBehaviour
     public float smileCounter = 0.0f;
     public GameOverScreen GameOverScreen;
     public float totalTime;
-    //public float timer = 0.0f;
     CartoonAgents[] a;
     // Start is called before the first frame update
     void Start()
@@ -51,17 +50,14 @@ public class CartoonPlayer : MonoBehaviour
                     camForward.Normalize();
                     Vector3 targetDir = aap - cam.transform.position;
                     targetDir.Normalize();
+                    
 
                     float lookAtAngleRad = Mathf.Acos(Vector3.Dot(camForward, targetDir));
                     float lookAtAngle = lookAtAngleRad * 180.0f / Mathf.PI;
                     
+                    
                     // looking at?
                     if(lookAtAngle <= lookAtHalfAngle) {
-                        /*aa.LookAtPoint(cam.transform.position, 
-                        cam.transform.position - new Vector3(0, headVerticalTargetOffset, 0),
-                        eyeAngleCorrectAlpha);*/
-                        aa.OnAnimatorIK(0);
-                        
                         // unique timer for every agent to check for smile
                         aa.timer += Time.deltaTime;
 
