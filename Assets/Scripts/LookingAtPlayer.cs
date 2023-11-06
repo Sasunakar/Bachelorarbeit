@@ -41,7 +41,7 @@ public class LookingAtPlayer : MonoBehaviour
 
         float dist = Vector3.Distance(pivotTransform.position, objectToLookAt.position);
 
-        if ((pivotRotY < 60.0f && pivotRotY > 0.0f && dist < 3.0f) || (pivotRotY < 360.0f && pivotRotY > 300.0f && dist < 3.0f))
+        if ((pivotRotY < 60.0f && pivotRotY > 0.0f && dist < 2.8f) || (pivotRotY < 360.0f && pivotRotY > 300.0f && dist < 2.8f))
         {
             lookWeight = Mathf.Lerp(lookWeight, 1, Time.deltaTime * 2.5f);
         }
