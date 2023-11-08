@@ -59,6 +59,8 @@ public class AnimatedAgents : MonoBehaviour
         
 
     }
+    
+    /*
     (Vector3 up, Vector3 right) MakeAxisFromForward(Vector3 forward) 
     {
         Vector3 pUp = new Vector3(0, 1, 0);
@@ -95,6 +97,7 @@ public class AnimatedAgents : MonoBehaviour
         Quaternion rotEyeR = Quaternion.LookRotation(-vecsEyeR.right, vecsEyeR.up);
         rEyeBone.transform.rotation = rotEyeR;
     }
+    */
     public void sneezingTrigger()
     {
         animator.SetTrigger("sneezing");
