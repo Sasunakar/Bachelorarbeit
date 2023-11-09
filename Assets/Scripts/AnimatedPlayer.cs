@@ -9,21 +9,15 @@ public class AnimatedPlayer : MonoBehaviour
     public float triggerDist;
     public float triggerHalfAngle;
     public float lookAtHalfAngle;
-    public float headVerticalTargetOffset;
-    public float eyeTargetBackOffset;
-    public float eyeAngleCorrectAlpha;
     public float smileCounter = 0.0f;
     public GameOverScreen GameOverScreen;
     public float totalTime;
-    public string sceneNameP;
     //public float timer = 0.0f;
     AnimatedAgents[] a;
     // Start is called before the first frame update
     void Start()
     {
         a = (AnimatedAgents[])GameObject.FindObjectsOfType(typeof(AnimatedAgents));
-        Scene currentScene = SceneManager.GetActiveScene ();
-        sceneNameP = currentScene.name;
     }
 
     // Update is called once per frame
@@ -71,15 +65,6 @@ public class AnimatedPlayer : MonoBehaviour
                         // sneeze timing reached?
                         if (aa.timer > aa.waitingTime)
                         {
-                            // is this the deceased scene?
-                            if (sceneNameP == "VRBusstopDeceased")
-                            {
-                                if(aa.name == "Sadik" || aa.name == "Helena" || aa.name == "Ann" || aa.name == "Leon")
-                                {
-                                    aa.sneezingTrigger();
-                                }
-                            }
-                            
                             // did agent already smile?
                             if (aa.smilingCounter == 0)
                             {
