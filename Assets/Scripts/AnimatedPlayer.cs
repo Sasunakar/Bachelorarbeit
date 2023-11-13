@@ -32,7 +32,6 @@ public class AnimatedPlayer : MonoBehaviour
             Vector2 camDelta = new Vector2(xDif, zDif);
             float dist = camDelta.magnitude;
 
-            // in distance?
             if(dist < triggerDist ) {
                 Vector3 forward3 = aa.transform.TransformVector(new Vector3(0,0,1));
                 forward3.Normalize();
@@ -41,7 +40,6 @@ public class AnimatedPlayer : MonoBehaviour
                 float dirDot = Vector2.Dot(fw, -camDelta);
                 float angle = Mathf.Acos(dirDot) * 180.0f / Mathf.PI;
 
-                // in front of?
                 if(angle <= triggerHalfAngle) {
                     Vector3 aap = aa.focusBone.transform.position;
                     Vector3 camForward = cam.transform.TransformVector(new Vector3(0,0,1));
