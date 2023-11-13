@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Smile Helena
+  m_Name: Smile Sarah
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -42,7 +42,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: blendShape.blendShape1.AA_VI_07_SS
-    path: f007_hipoly_81_bones_opacity
+    path: f003_hipoly_81_bones_opacity
     classID: 137
     script: {fileID: 0}
   - curve:
@@ -59,7 +59,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 2
-        value: 79
+        value: 71
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -69,8 +69,8 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: blendShape.blendShape1.AU_01_InnerBrowRaiser
-    path: f007_hipoly_81_bones_opacity
+    attribute: blendShape.blendShape1.AU_02_OuterBrowRaiser
+    path: f003_hipoly_81_bones_opacity
     classID: 137
     script: {fileID: 0}
   - curve:
@@ -98,7 +98,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: blendShape.blendShape1.AU_06_CheekRaiser
-    path: f007_hipoly_81_bones_opacity
+    path: f003_hipoly_81_bones_opacity
     classID: 137
     script: {fileID: 0}
   - curve:
@@ -126,7 +126,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: blendShape.blendShape1.AU_12_LipCornerPuller
-    path: f007_hipoly_81_bones_opacity
+    path: f003_hipoly_81_bones_opacity
     classID: 137
     script: {fileID: 0}
   m_PPtrCurves: []
@@ -138,28 +138,28 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 1063820225
+      path: 3302347066
       attribute: 2149555332
       script: {fileID: 0}
       typeID: 137
       customType: 20
       isPPtrCurve: 0
     - serializedVersion: 2
-      path: 1063820225
-      attribute: 1626895454
+      path: 3302347066
+      attribute: 3058318421
       script: {fileID: 0}
       typeID: 137
       customType: 20
       isPPtrCurve: 0
     - serializedVersion: 2
-      path: 1063820225
+      path: 3302347066
       attribute: 221608645
       script: {fileID: 0}
       typeID: 137
       customType: 20
       isPPtrCurve: 0
     - serializedVersion: 2
-      path: 1063820225
+      path: 3302347066
       attribute: 1325814986
       script: {fileID: 0}
       typeID: 137
@@ -212,7 +212,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: blendShape.blendShape1.AA_VI_07_SS
-    path: f007_hipoly_81_bones_opacity
+    path: f003_hipoly_81_bones_opacity
     classID: 137
     script: {fileID: 0}
   - curve:
@@ -229,7 +229,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 2
-        value: 79
+        value: 71
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -239,8 +239,8 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: blendShape.blendShape1.AU_01_InnerBrowRaiser
-    path: f007_hipoly_81_bones_opacity
+    attribute: blendShape.blendShape1.AU_02_OuterBrowRaiser
+    path: f003_hipoly_81_bones_opacity
     classID: 137
     script: {fileID: 0}
   - curve:
@@ -268,7 +268,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: blendShape.blendShape1.AU_06_CheekRaiser
-    path: f007_hipoly_81_bones_opacity
+    path: f003_hipoly_81_bones_opacity
     classID: 137
     script: {fileID: 0}
   - curve:
@@ -296,7 +296,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: blendShape.blendShape1.AU_12_LipCornerPuller
-    path: f007_hipoly_81_bones_opacity
+    path: f003_hipoly_81_bones_opacity
     classID: 137
     script: {fileID: 0}
   m_EulerEditorCurves: []
