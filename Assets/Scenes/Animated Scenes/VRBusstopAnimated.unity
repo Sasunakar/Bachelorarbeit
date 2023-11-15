@@ -7485,8 +7485,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pointsOfInterest: []
-  lookAtPlayerRatio: 0.9
-  stareBackFactor: 0.504
+  lookAtPlayerRatio: 0.5
+  stareBackFactor: 0.9
   noticePlayerDistance: 1
   personalSpaceDistance: 0
   minLookTime: 40
