@@ -35,6 +35,11 @@ public class AnimatedAgents : MonoBehaviour
     public void smileTrigger()
     {
         animator.SetTrigger("smile");
-    }  
+    }
+
+    public void acknowledgeTrigger()
+    {
+        animator.SetTrigger("acknowledge");
+    }
 }
  

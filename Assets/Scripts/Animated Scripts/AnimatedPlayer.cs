@@ -40,7 +40,7 @@ public class AnimatedPlayer : MonoBehaviour
                 float dirDot = Vector2.Dot(fw, -camDelta);
                 float angle = Mathf.Acos(dirDot) * 180.0f / Mathf.PI;
 
-                if(angle <= triggerHalfAngle) {
+                if (angle <= triggerHalfAngle) {
                     Vector3 aap = aa.focusBone.transform.position;
                     Vector3 camForward = cam.transform.TransformVector(new Vector3(0,0,1));
                     camForward.Normalize();
@@ -59,13 +59,14 @@ public class AnimatedPlayer : MonoBehaviour
                         
                         // unique timer for every agent to check for smile
                         aa.timer += Time.deltaTime;
-                        
+
                         // sneeze timing reached?
                         if (aa.timer > aa.waitingTime)
                         {
                             // did agent already smile?
                             if (aa.smilingCounter == 0)
                             {
+                                aa.acknowledgeTrigger();
                                 aa.smileTrigger();
                                 aa.smilingCounter += 1;
                                 smileCounter += 1;
