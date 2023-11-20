@@ -1415,7 +1415,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: bcec3e850a5e64bec834a3bc9d92b121, type: 3}
       propertyPath: m_Name
-      value: Leon  - Animated
+      value: Leon - Animated
       objectReference: {fileID: 0}
     - target: {fileID: 3068023569106413502, guid: bcec3e850a5e64bec834a3bc9d92b121, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3200,7 +3200,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 76e417d2e727f4bebaa5ac093d8a413e, type: 3}
       propertyPath: m_Name
-      value: Sylvia  - Animated
+      value: Sylvia - Animated
       objectReference: {fileID: 0}
     - target: {fileID: 926215472100687996, guid: 76e417d2e727f4bebaa5ac093d8a413e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

@@ -12,7 +12,6 @@ public class AnimatedPlayer : MonoBehaviour
     public float smileCounter = 0.0f;
     public GameOverScreen GameOverScreen;
     public float totalTime;
-    //public float timer = 0.0f;
     AnimatedAgents[] a;
     // Start is called before the first frame update
     void Start()
@@ -52,11 +51,6 @@ public class AnimatedPlayer : MonoBehaviour
                     
                     // looking at?
                     if(lookAtAngle <= lookAtHalfAngle) {
-                        /*aa.LookAtPoint(cam.transform.position, 
-                        cam.transform.position - new Vector3(0, headVerticalTargetOffset, 0),
-                        eyeAngleCorrectAlpha);
-                        */
-                        
                         // unique timer for every agent to check for smile
                         aa.timer += Time.deltaTime;
 
