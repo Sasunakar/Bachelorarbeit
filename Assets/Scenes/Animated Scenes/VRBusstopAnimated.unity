@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6549,7 +6549,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: edbcab0f8978e41d694755be9fd695a0, type: 3}
       propertyPath: m_Name
-      value: Sadik
+      value: Sadik - Animated
       objectReference: {fileID: 0}
     - target: {fileID: 3068023569106413502, guid: edbcab0f8978e41d694755be9fd695a0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7830,7 +7830,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 76e417d2e727f4bebaa5ac093d8a413e, type: 3}
       propertyPath: m_Name
-      value: Sylvia
+      value: Sylvia  - Animated
       objectReference: {fileID: 0}
     - target: {fileID: 926215472100687996, guid: 76e417d2e727f4bebaa5ac093d8a413e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -23921,7 +23921,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f5a13b6b4c2244c6aac885fff93664db, type: 3}
       propertyPath: m_Name
-      value: Helena
+      value: Helena  - Animated
       objectReference: {fileID: 0}
     - target: {fileID: 3068023569106413502, guid: f5a13b6b4c2244c6aac885fff93664db, type: 3}
       propertyPath: m_LocalRotation.w
@@ -49848,7 +49848,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 2c2d86ad8b54d481d84da665536e852d, type: 3}
       propertyPath: m_Name
-      value: Zina
+      value: Zina  - Animated
       objectReference: {fileID: 0}
     - target: {fileID: 926215472100687996, guid: 2c2d86ad8b54d481d84da665536e852d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -52160,7 +52160,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 61bedcd67f17c49c8a295380b735f500, type: 3}
       propertyPath: m_Name
-      value: Sandra
+      value: Sandra  - Animated
       objectReference: {fileID: 0}
     - target: {fileID: 926215472100687996, guid: 61bedcd67f17c49c8a295380b735f500, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -57665,7 +57665,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: bcec3e850a5e64bec834a3bc9d92b121, type: 3}
       propertyPath: m_Name
-      value: Leon
+      value: Leon  - Animated
       objectReference: {fileID: 0}
     - target: {fileID: 3068023569106413502, guid: bcec3e850a5e64bec834a3bc9d92b121, type: 3}
       propertyPath: m_LocalRotation.w
@@ -59838,7 +59838,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3ce3b9571f8c14a58829cad2712575c3, type: 3}
       propertyPath: m_Name
-      value: Sarah
+      value: Sarah  - Animated
       objectReference: {fileID: 0}
     - target: {fileID: 926215472100687996, guid: 3ce3b9571f8c14a58829cad2712575c3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -62746,7 +62746,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c9803ccae36c5458c9f7eb73f5ab0b89, type: 3}
       propertyPath: m_Name
-      value: Ann
+      value: Ann  - Animated
       objectReference: {fileID: 0}
     - target: {fileID: 926215472100687996, guid: c9803ccae36c5458c9f7eb73f5ab0b89, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -63923,7 +63923,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: eded0e930295c47c78aa020ba09021db, type: 3}
       propertyPath: m_Name
-      value: Fiona
+      value: Fiona  - Animated
       objectReference: {fileID: 0}
     - target: {fileID: 3068023569106413502, guid: eded0e930295c47c78aa020ba09021db, type: 3}
       propertyPath: m_LocalRotation.w
@@ -65058,7 +65058,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: 88e046ff3f534404d84bec9dd7056945, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 1
+  m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
@@ -66125,7 +66125,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 0ee6628e38f244064a50aa3ec8a55a6b, type: 3}
       propertyPath: m_Name
-      value: Lukas
+      value: Lukas -  Animated
       objectReference: {fileID: 0}
     - target: {fileID: 3068023569106413502, guid: 0ee6628e38f244064a50aa3ec8a55a6b, type: 3}
       propertyPath: m_LocalRotation.w
